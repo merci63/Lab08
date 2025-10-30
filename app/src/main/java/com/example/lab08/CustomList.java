@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CustomList {
     private List<City> cities;
-    //test
+    //test CI
 
     public CustomList() {
         this.cities = new ArrayList<>();
