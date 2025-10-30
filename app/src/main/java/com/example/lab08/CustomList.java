@@ -7,13 +7,14 @@ public class CustomList {
     private List<City> cities;
     //test CI
 
+
     public CustomList() {
         this.cities = new ArrayList<>();
     }
 
-    public void addCity(City city) {
-        cities.add(city);
-    }
+//    public void addCity(City city) {
+//        cities.add(city);
+//    }
 
     
 
@@ -21,4 +22,7 @@ public class CustomList {
      public boolean hasCity(City city) {
         return cities.contains(city);
      }
+    public int getCount(){
+        return cities.size();
+    }
 }

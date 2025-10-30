@@ -10,5 +10,16 @@ public class CustomListTest {
         list.addCity(calgary);
         assertTrue(list.hasCity(calgary));
     }
+    public CustomList MockCityList(){
+        CustomList list = new CustomList();
+        return list;
+    }
+    @Test
+    public void addCityTest(){
+        CustomList list = MockCityList();
+        int listSize = list.getCount();
+        list.addCity(new City("Estevan","SK"));
+        assertEquals(listSize + 1, list.getCount());
+    }
 
 }
